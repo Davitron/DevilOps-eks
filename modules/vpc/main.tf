@@ -8,7 +8,7 @@ module "vpc" {
   name = "my-vpc"
   cidr = var.cidr
 
-  azs             = ["eu-west-1a", "eu-west-1b", "eu-west-1c"]
+  azs             = ["eu-west-2a", "eu-west-2b", "eu-west-2c"]
   private_subnets = var.private_subnets_cidr
   public_subnets  = var.public_subnets_cidr
 
