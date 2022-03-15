@@ -21,7 +21,5 @@ provider "aws" {
 
 
 data "aws_vpc" "default" {
-  tags = {
-    Name = "default"
-  }
+  provider = "aws"
 }
