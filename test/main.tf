@@ -21,5 +21,5 @@ provider "aws" {
 
 
 data "aws_vpc" "default" {
-  provider = aws.eu-west-2
+  provider = aws
 }
