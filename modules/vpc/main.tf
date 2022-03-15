@@ -40,7 +40,7 @@ data "aws_route_tables" "default_vpc_tables" {
 resource "aws_vpc_peering_connection" "peering_default" {
   depends_on  = [module.vpc]
   peer_vpc_id = module.vpc.vpc_id
-  vpc_id      = var.default_vpc_id
+  vpc_id      = data.aws_vpc.default_vpc.id
 
   auto_accept = true
 
